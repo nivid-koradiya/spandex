@@ -1,0 +1,28 @@
+
+.custom-btn{
+    border-radius: 40px;
+    border: var(--primary);
+    background: var(--secondary);
+    width: auto;
+}
+
+
+.custom-btn:hover{
+    background-color: var(--tertiary)
+     !important
+     ;
+}
+
+.custom-btn:focus{
+    background-color: var(--tertiary);
+}
+
+.custom-btn:active{
+    background-color: var(--tertiary);
+}
+
+
+
+.title-light{
+    color: var(--base);
+}

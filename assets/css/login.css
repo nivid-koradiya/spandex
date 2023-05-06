@@ -1,0 +1,82 @@
+body{
+    background-color: var(--base);
+}
+.container{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+}
+.form {
+    min-width: 400px;
+    font-size: 2.5rem;
+    padding:  70px 80px 50px;
+    border: 0.5px solid var(--secondary);
+    border-radius: 16px;
+    background-color: var(--primary);
+    text-align: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+@media (max-width: 500px) {
+    .form {
+        min-width: 90%;
+        padding: 70px 20px 40px;
+    }
+}
+
+.uname, .pass{
+    border-radius: 50px;
+    border: 0.3px solid var(--secondary);
+    background: var(--base);
+    color: var(--secondary);
+    text-align: center;
+}
+
+.pass::placeholder{
+    text-align: center;
+}
+
+.login-btn{
+    border-radius: 40px;
+    border: var(--primary);
+    background: var(--secondary);
+    width: 30%;
+}
+
+.login-btn:hover{
+    background-color: var(--tertiary);
+}
+
+.login-btn:focus{
+    background-color: var(--tertiary);
+}
+
+.login-btn:active{
+    background-color: var(--tertiary);
+    /* border: none; */
+}
+
+
+.title{
+    color: var(--tertiary);
+}
+
+
+
+
+.login-error{
+    color: red;
+    font-style: italic;
+}
+
+.loggedin{
+    color:rgb(66, 156, 66);
+}
+
+.custom-btn{
+    border-radius: 40px;
+    border: var(--primary);
+    background: var(--secondary);
+    width: auto;
+}
