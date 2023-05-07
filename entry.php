@@ -8,10 +8,6 @@ if (!isset($_SESSION['IS_LOGIN'])) {
 
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <?php require("backend.php"); ?>
@@ -27,16 +23,6 @@ if (!isset($_SESSION['IS_LOGIN'])) {
     <link rel="stylesheet" href="assets/css/colors.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-
-    <style>
-        .entry-modal{
-            background: var(--tertiary);
-        }
-        .entry-modal-dialog{
-            background: var(--secondary);
-        }
-
-    </style>
 </head>
 
 <?php
@@ -54,18 +40,18 @@ $today = $year . '-' . $month . '-' . $day;
             <h5 class="mb-3 title">ENTRY PORTAL</h5>
             <form action="" method="post" autocomplete="off" onsubmit="return validateForm()" name="form">
                 <div class="form-group">
-                    <select class="form-select btn btn-primary custom-btn" aria-label="Default select example" name="type">
-                        <option selected>Select Transaction type ⬇</option>
-                        <option value="expense">🔴 Expense </option>
-                        <option value="income">🟢 Income </option>
-                        <option value="3" disabled>🔵 Transfer Funds </option>
-                    </select>
-                </div>
-                <div class="form-group">
                     <input type="date" id="entry-date" name="date" class="form-control uname" max="<?php echo $today; ?>" value="<?php echo $today; ?>">
                 </div>
+
+                <select class="form-select custom-btn-drop" aria-label="Default select" name="type">
+                    <option selected>Select Transaction type ↓</option>
+                    <option value="expense">🔴 Expense </option>
+                    <option value="income">🟢 Income </option>
+                    <option value="3" disabled>🔵 Transfer Funds </option>
+                </select>
+
                 <div class="form-group">
-                    <input type="text" name="amount" class="form-control input uname" placeholder="Amount">
+                    <input type="number" name="amount" class="form-control input uname" placeholder="Amount" >
                 </div>
                 <div class="form-group">
                     <input type="text" name="desc" class="form-control input uname" placeholder="Description">
