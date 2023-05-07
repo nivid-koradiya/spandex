@@ -1,31 +1,50 @@
-
-.custom-btn{
+.custom-btn {
     border-radius: 40px;
     border: var(--primary);
     background: var(--secondary);
     width: auto;
-    color: var(
-        --base
-    );
+    color: var(--base);
+    margin-bottom: 10px;
+    text-align: center;
+
 }
 
-
-.custom-btn:hover{
-    background-color: var(--tertiary)
-     !important
-     ;
+.custom-btn:hover {
+    background-color: var(--tertiary) !important;
 }
 
-.custom-btn:focus{
+.custom-btn:focus {
     background-color: var(--tertiary);
 }
 
-.custom-btn:active{
+.custom-btn:active {
     background-color: var(--tertiary);
 }
 
 
 
-.title-light{
+.title-light {
     color: var(--base);
 }
+
+
+/* entry.php css STARTS*/
+.entry-modal {
+    background: var(--tertiary);
+}
+
+.entry-modal-dialog {
+    background: var(--secondary);
+}
+select{
+    appearance: none;
+}
+.custom-btn-drop {
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    color: var(--secondary);
+    background: var(--base);
+    text-align: center;
+}
+/* entry.php css ENDS */
