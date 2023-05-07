@@ -4,6 +4,9 @@
     border: var(--primary);
     background: var(--secondary);
     width: auto;
+    color: var(
+        --base
+    );
 }
 
 

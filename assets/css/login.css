@@ -31,10 +31,15 @@ body{
     background: var(--base);
     color: var(--secondary);
     text-align: center;
+
 }
 
 .pass::placeholder{
     text-align: center;
+}
+
+.uname{
+    margin-bottom: 10px;
 }
 
 .login-btn{

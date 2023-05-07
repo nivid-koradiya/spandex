@@ -30,7 +30,7 @@ echo '<h6 class="loggedin">Logged out!</h6>';
 
 echo '<a href="login.php"> <div class="btn btn-secondary custom-btn">Login?</div></a>';
         }
-        catch(Exception){
+        catch(Exception $e){
             echo "EROOR LOGGING OUT!!!";
         }
 
